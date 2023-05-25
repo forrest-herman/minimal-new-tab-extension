@@ -10,7 +10,7 @@ export function GeneralSettings({ widget }: { widget: WidgetPropertiesType }) {
   return (
     <div>
       <LabelledSlider
-        label="Size"
+        label="Font Size"
         min={2}
         max={24}
         onChange={(widget_font_size) => {

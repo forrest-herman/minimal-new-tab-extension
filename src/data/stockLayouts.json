@@ -1,38 +1,69 @@
 {
-  "default": {
-    "name": "default",
-    "widgets": [
-      {
-        "widgetCode": "clock",
-        "subText": "Tokyo",
-        "fontSize": 3,
-
-        "alignHorizontal": "right",
-        "alignVertical": "end",
-        "clockTimeZone": "Asia/Novosibirsk",
-        "seperator": ":",
-        "timeFormat": "hh:mm A",
-        "id": "1680393526778",
-        "layout": { "x": 0, "y": 2 },
-        "lastMovedAt": 1680401262517
-      },
-      {
-        "widgetCode": "clock",
-        "subText": "",
-        "fontSize": 7,
-        "clockTimeZone": "",
-        "seperator": ":",
-        "timeFormat": "hh:mm A",
-        "id": "1680396533586",
-        "lastMovedAt": 1680401459784,
-        "layout": { "x": 1, "y": 1 }
-      }
-    ],
-    "cells": {
-      "2-2": {
-        "border": "none",
-        "stacking": "horizontal"
-      }
+    "default": {
+        "name": "default",
+        "widgets": [
+            {
+                "widgetCode": "clock",
+                "subText": "Tokyo",
+                "fontSize": 3,
+                "alignHorizontal": "right",
+                "alignVertical": "end",
+                "clockTimeZone": "Asia/Novosibirsk",
+                "seperator": ":",
+                "timeFormat": "h:mm A",
+                "id": "1680393526778",
+                "layout": { "x": 0, "y": 2 },
+                "lastMovedAt": 1680401262517
+            },
+            {
+                "widgetCode": "clock",
+                "subText": "",
+                "fontSize": 7,
+                "clockTimeZone": "",
+                "seperator": ":",
+                "timeFormat": "h:mm A",
+                "id": "1680396533586",
+                "lastMovedAt": 1680401459784,
+                "layout": { "x": 1, "y": 1 }
+            },
+            {
+                "widgetCode": "weather",
+                "fontSize": 4,
+                "borderStyle": "none",
+                "temperature": 289.61,
+                "weatherCondition": "Clouds",
+                "tempraureUnit": "C",
+                "subText": "Hamilton",
+                "display": "temperature_and_condition",
+                "city": {
+                    "__typename": "City",
+                    "id": 772,
+                    "name": "Hamilton",
+                    "country": "Canada",
+                    "lat": 43.25011,
+                    "lon": -79.84963,
+                    "timezone": "America/Toronto"
+                },
+                "id": "1684542612644",
+                "lastMovedAt": 1684542612645,
+                "layout": { "x": 0, "y": 0 }
+            },
+            {
+                "widgetCode": "wish",
+                "fontSize": 2,
+                "borderStyle": "none",
+                "messageText": "Good Evening",
+                "userName": "Forrest",
+                "id": "1684542759404",
+                "lastMovedAt": 1684542759404,
+                "layout": { "x": 1, "y": 1 }
+            }
+        ],
+        "cells": {
+            "2-2": {
+                "border": "none",
+                "stacking": "horizontal"
+            }
+        }
     }
-  }
 }

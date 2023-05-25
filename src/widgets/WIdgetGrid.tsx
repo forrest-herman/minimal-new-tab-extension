@@ -81,7 +81,7 @@ export function WidgetGrid({
             setSelectedWidget(widget.id);
           }}
         >
-          <Widget tick={tick} unlocked={unlocked} widget={widget} />
+          <Widget tick={tick} unlocked={unlocked} widget={widget} settingsOpen={settingsOpen}/>
         </div>
       </OverlayTrigger>
     ));

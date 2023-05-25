@@ -40,7 +40,7 @@ export const WidgetPicker = ({ setDroppingWidgetData }) => {
           To add a widget, drag and drop it to the screen...
         </div>
         <Container>
-          <Row>
+          <Row style={{overflow: "scroll", height: "40vh"}}>
             {widgetKeys.map((key, index) => (
               <Col md="6">
                 <div

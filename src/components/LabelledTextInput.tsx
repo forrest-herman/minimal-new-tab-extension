@@ -9,6 +9,7 @@ export function LabelledTextInput({
 }: {
   label: string;
   helpText?: string;
+  placeholder?: string;
   onChange: (value: string) => void;
   lines?: number;
 }) {

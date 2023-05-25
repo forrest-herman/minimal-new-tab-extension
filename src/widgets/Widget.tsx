@@ -1,6 +1,7 @@
 import { WidgetCodeType, WidgetMapType, WidgetPropertiesType } from "../types";
 import { clockWidget } from "./clock";
 import { messageWidget } from "./message";
+import { IconBookmarkWidget } from "./bookmark";
 import { weatherWidget } from "./weather";
 import { timeOfDayWish } from "./timeOfDayWish";
 
@@ -9,6 +10,7 @@ import "rc-slider/assets/index.css";
 export const widgetKeyMap: WidgetMapType = () =>( {
   clock: clockWidget,
   message: messageWidget,
+  iconBookmark: IconBookmarkWidget,
   weather: weatherWidget,
   wish: timeOfDayWish
 });
@@ -23,15 +25,18 @@ export const initialWidgetTemplate = (
 
 export const Widget = ({
   widget,
-  tick
+  tick,
+  unlocked,
+  settingsOpen
 }: {
-  unlocked: boolean;
   widget: WidgetPropertiesType;
   tick: number;
+  unlocked: boolean;
+  settingsOpen: boolean;
 }) => {
   const renderedWidget = (
     <div className="widget">
-      {widgetKeyMap()[widget.widgetCode].renderWidget(widget, tick)}
+      {widgetKeyMap()[widget.widgetCode].renderWidget(widget, tick, unlocked)}
     </div>
   );
   return renderedWidget;
