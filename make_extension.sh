@@ -19,7 +19,7 @@ cat > $MANIFEST_FILE <<- EOM
 {
   "manifest_version": 3,
   "name": "Minim",
-  "description": "A minimal newtab for Chrome",
+  "description": "A minimal newtab for your chromium browser",
   "version": "$new_version",
   "action": {
     "default_popup": "index.html",
