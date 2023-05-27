@@ -1,3 +1,5 @@
+![Extension Preview](public/preview.jpg)
+
 # Development
 
 This project uses [Vite](https://vitejs.dev/guide/)
